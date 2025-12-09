@@ -1,12 +1,12 @@
 {
   "name": "dio4",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.jsx",
   "repository": "https://github.com/pablo-cavalcante/dio4.git",
   "author": "Pablo S. Cavalcante <pabloscv@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack server --open --hot --mode development --port 3000",
+    "start": "webpack server --hot --mode development --port 3000",
     "build": "webpack --mode production"
   },
   "devDependencies": {
@@ -14,7 +14,12 @@
     "@babel/preset-env": "^7.28.5",
     "@babel/preset-react": "^7.28.5",
     "@eslint/js": "^9.39.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
     "eslint": "^9.39.1",
     "eslint-plugin-react": "^7.37.5",
@@ -31,9 +36,12 @@
     "webpack-dev-server": "^5.2.2"
   },
   "dependencies": {
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/typescript": "^2.0.0",
     "axios": "^1.13.2",
     "react-hook-form": "^7.68.0",
     "react-router-dom": "^7.10.1",
+    "ts-loader": "^9.5.4",
     "web-vitals": "^5.1.0"
   }
 }
