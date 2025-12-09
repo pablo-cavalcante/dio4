@@ -14,7 +14,8 @@
     "noEmit": false, // Important: TypeScript only performs type checking, the bundler (like Webpack/Vite) handles the actual JavaScript output
     "allowJs": true, // Allows JavaScript files to be included in the project
     "outDir": "./dist", // Output directory for compiled files (if noEmit is false)
-    "sourceMap": true // Generates corresponding .map files
+    "sourceMap": true, // Generates corresponding .map files
+    "noImplicitAny": false
   },
   "include": ["src"], // Only include files within the 'src' directory
   "exclude": ["node_modules"] // Exclude the node_modules directory
